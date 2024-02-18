@@ -1,0 +1,483 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------------l'en-tête---------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.header__name {
+    margin-right: 500px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+.header__identification {
+    display: flex;
+    right: 50px;
+}
+.btnG--bouton {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px 0.5em;
+    margin-bottom: 6px;
+    color: black;
+    display: inline-block;
+    margin: 0 2%;
+    border-right: 1px solid black;
+}
+.header__btnG{
+    display: flex;
+    list-style-type: none;
+}
+/*-------------------------------le corps--------------------*/
+
+.conteneur {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.conteneur__png { /* la taille de ma photo */
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1px;
+    width: 284px;
+    height: 284px;
+    outline: 1px ridge rgb(255, 254, 255);
+    background-color: gray;
+    filter: grayscale(100%);
+}
+.section { 
+    color: #080808;
+    max-width: 500px;
+}
+.section__hello {
+    display: inline;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+.section__apropos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+.section__monparagraph {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 20pt;
+    margin-top: 7px;
+    color: black;
+}
+.hello__btn {
+    background-color: orange;
+    display: flex;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 20px 0.5em;
+    margin-top: 10px;
+    color: black;
+    border-radius: 50%;
+    width: 90px;
+    height: 50px;
+    padding-bottom: 20px;
+    border: 1px solid  #080808 ;
+    align-items: center;
+    flex-direction: row;
+
+}
+.hello__btn--text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hello__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.hello__btn--colorred {
+    background-color: red;
+}
+.hello__btn--colorblue {
+    background-color: skyblue;
+}
+/*------------------------------pied de la page-------------------------*/
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer__pied{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+hr {
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+    width: 85%;
+}
+.facebook {
+    text-decoration: none;
+    color: black;
+}
+.twitter {
+    text-decoration: none;
+    color: black;
+}
+.instagram {
+    text-decoration: none;
+    color: black;
+}
+.linkedin {
+    text-decoration: none;
+    color: black;
+}
+.bcl {
+    font-size: 12px;
+    padding: 0px 0.5em;
+}
+.tel {
+    text-decoration: none;
+    color: black;
+}
+.email {
+    text-decoration: none;
+    color: black;
+}
+/*-----------------------------responsive-----------------*/
+
+@media screen and (max-width:450px){
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%;
+        overflow: hidden;
+        padding: 20px 10px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    .header__name {
+        display: flex;
+        text-align: center;
+        width: 150%;
+        padding-left: 12%;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    .header__identification {
+        display: flex;
+        text-align: center;
+        width: 150%;
+        padding-left: 10%;
+        font-size: 1.2rem;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+    .btnG--bouton {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0px;
+        padding: 0% 0.5em;
+        margin-bottom: 6px;  
+        margin: 0 2%;
+        border-right: 1px solid black;
+    }
+
+    /* --------------corps-------------------- */
+
+    .conteneur{
+        flex-direction: column;
+        max-width: 400px;
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section__monparagraph{
+        display: inline;
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 15%;
+        margin-top: 10%;    
+    }
+    .png { /* la taille de ma photo */
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 1px;
+        width: 200px;
+        height: 200px;
+        outline: 1px ridge rgb(255, 254, 255);
+        background-color: gray;
+        filter: grayscale(100%);
+        margin: auto;
+        text-align: center;
+        display: block;
+        
+    }
+    .btnG{
+        background-color: white;
+        display: flex;
+        text-decoration: none;
+        border-radius: 0px;
+        padding:0px 0.5em;
+        margin-bottom: 0%;
+        color: black;
+        margin: 0 2%;
+    }
+    .section__hello{
+        width: 100%;
+        color: black;
+        display: flex;
+        text-align: center;
+        padding-left: 38%;
+        padding-top: 20%;        
+    }
+    .conteneur__png{
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 1px;
+        width: 200px;
+        height: 200px;
+        outline: 1px ridge rgb(255, 254, 255);
+        background-color: gray;
+        filter: grayscale(100%);
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    .section__apropos{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+/* ----------------------pied de la page-------------- */
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer__pied{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+}
+hr {
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+    width: 85%;
+}
+.facebook {
+    text-decoration: none;
+    color: black;
+}
+.twitter {
+    text-decoration: none;
+    color: black;
+}
+.instagram {
+    text-decoration: none;
+    color: black;
+}
+.linkedin {
+    text-decoration: none;
+    color: black;
+}
+.bcl {
+    font-size: 12px;
+    padding: 0px 0.5em;
+}
+.tel {
+    text-decoration: none;
+    color: black;
+}
+.email {
+    text-decoration: none;
+    color: black;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        padding: 20px 10px;
+        background-color: white;
+        display: contents;
+        align-items: center;
+    }
+    .name{
+        text-decoration: none;
+        color: black;
+        display: block;
+        margin-right: 20px;
+        margin-left: 90px;
+        font-size: 1.8rem;
+    }
+    .identification{
+        display: block;
+        color: black;
+        margin-right: 20px;
+        margin-left: 50px;
+        font-size: 1.2rem;
+    }
+    .conteneur{
+        flex-direction: column;
+        max-width: 400px;
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section__monparagraph{
+        display: inline;
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 15%;
+        margin-top: 10%;    
+    }
+    .png { /* la taille de ma photo */
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 1px;
+        width: 200px;
+        height: 200px;
+        outline: 1px ridge rgb(255, 254, 255);
+        background-color: gray;
+        filter: grayscale(100%);
+        margin: auto;
+        text-align: center;
+        display: block;
+        
+    }
+    .btnG{
+        background-color: white;
+        display: flex;
+        text-decoration: none;
+        border-radius: 0px;
+        padding:0px 0.5em;
+        margin-bottom: 0%;
+        color: black;
+        margin: 0 2%;
+    }
+    .section__hello{
+        width: 100%;
+        color: black;
+        display: flex;
+        text-align: center;
+        padding-left: 38%;
+        padding-top: 20%;        
+    }
+    .conteneur__png{
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 1px;
+        width: 200px;
+        height: 200px;
+        outline: 1px ridge rgb(255, 254, 255);
+        background-color: gray;
+        filter: grayscale(100%);
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    .section__apropos{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #footer {
+        display: block;
+        justify-content: space-around;
+    }
+    .pied{
+        display: block;
+        justify-content: space-between;
+        max-width: 450px;
+        margin: auto;
+        text-align: center;
+    }
+    hr {
+        border-bottom: 1px solid black;
+        width: 85%;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__pied{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        max-width: 900px;
+        margin: auto;
+    }
+    hr {
+        margin-top: 100px;
+        border-bottom: 1px solid black;
+        width: 85%;
+    }
+    .facebook {
+        text-decoration: none;
+        color: black;
+    }
+    .twitter {
+        text-decoration: none;
+        color: black;
+    }
+    .instagram {
+        text-decoration: none;
+        color: black;
+    }
+    .linkedin {
+        text-decoration: none;
+        color: black;
+    }
+    .bcl {
+        font-size: 12px;
+        padding: 0px 0.5em;
+    }
+    .tel {
+        text-decoration: none;
+        color: black;
+    }
+    .email {
+        text-decoration: none;
+        color: black;
+    }
+    
+}

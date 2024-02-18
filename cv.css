@@ -1,0 +1,236 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*-------------l'en-tête-------------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: 0;
+    width: 98%;
+    overflow: hidden;
+    padding-top: 20px;
+    background-color: transparent ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__name {
+    margin-right: 400px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+}
+.header__bouton {
+    display: flex;
+}
+.identification--bouton {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px 0.5em;
+    margin-bottom: 6px;
+    color: black;
+    align-items: center;
+    margin: 0 2%;
+    margin-top: auto;
+}
+.bouton--bordure {
+    border-right: 1px solid black;
+}
+/*-----------------------le corps-----------------------*/
+
+.experience {
+    width: 85%;
+    padding: 0px 0.5em;
+    color: black;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 1.0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 10%;
+    margin-left:10%;
+    margin-bottom: 0%;
+    line-height: normal;
+}
+.experience__annee{
+    margin-left: 90%;
+    width: 5%;
+}
+.professional {
+    width: 85%;
+    padding: 0px 0.5em;
+    color: black;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 1.0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 0%;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+.Langues {
+    width: auto;
+    padding: 0px 0.5em;
+    color: black;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 1.0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-left:10%;
+    margin-right: 10%;
+    line-height: normal;
+}
+
+/*-------------------pied de page------------------*/
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer__pied{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+hr {
+    border-bottom: 1px solid black;
+    width: 85%;
+}
+.facebook {
+    text-decoration: none;
+    color: black;
+}
+.twitter {
+    text-decoration: none;
+    color: black;
+}
+.instagram {
+    text-decoration: none;
+    color: black;
+}
+.linkedin {
+    text-decoration: none;
+    color: black;
+}
+.bcl {
+    font-size: 12px;
+    padding: 0px 0.5em;
+}
+.tel {
+    text-decoration: none;
+    color: black;
+}
+.email {
+    text-decoration: none;
+    color: black;
+}
+/*-------------------responsive-------------------*/
+
+@media screen and (max-width:450px){
+    .header {
+        position: fixed;
+        width: 80%;
+        display: contents;
+        text-align: center;
+    }
+    .header__name {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        padding-left: 22%;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    .header__bouton {
+        display: flex;
+        text-align: center;
+        width: 55%;
+        padding-right: 20%;
+        font-size: 1.3rem;
+    }
+    .header__bouton{
+        list-style-type: none;
+        display: flex;
+        text-align: center;
+        width: 38%;
+        padding-left: 10%;
+    }
+    .experience {
+        width: 85%;
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 20%;  
+    }
+    .professional{
+        width: 85%;
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+    .Langues{
+        width: 85%;
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__pied{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        max-width: 900px;
+        margin: auto;
+    }
+    hr {
+        margin-top: 100px;
+        border-bottom: 1px solid black;
+        width: 85%;
+    }
+    .facebook {
+        text-decoration: none;
+        color: black;
+    }
+    .twitter {
+        text-decoration: none;
+        color: black;
+    }
+    .instagram {
+        text-decoration: none;
+        color: black;
+    }
+    .linkedin {
+        text-decoration: none;
+        color: black;
+    }
+    .bcl {
+        font-size: 12px;
+        padding: 0px 0.5em;
+    }
+    .tel {
+        text-decoration: none;
+        color: black;
+    }
+    .email {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,355 @@
+.body {
+        font-family: "Roboto", sans-serif; 
+}
+/* --------------------l'en-tête--------------------------- */
+
+.header__name {
+    margin-right: 500px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+}
+.header__menu {
+    list-style-type: none;
+    display: flex;
+}
+.header__identification {
+    display: flex;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 20px 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px 0.5em;
+    margin-bottom: 6px;
+    color: black;
+    display: inline-block;
+    margin: 0 2%;
+}
+.item--border {
+    border-right: 1px solid black;
+}
+/* --------------------------corps---------------------------- */
+
+.contact__phone {
+    font: 100;
+    line-height: 49.71pt;
+    color: #000000 ;
+}
+.form__camp {
+    margin-right: 5%;
+}
+
+.form__camp, .form__camp1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.submit {
+    margin: 60px 0px 0px 20px;
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid  #080808 ;
+}
+.submit :hover {
+    color: red;
+}
+.forms {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 2% 10% 6% 10%;
+    margin-right: 200px;
+}
+.form__widthmsg {
+    background-color: white;
+    width: 170px; 
+    height: 117px;
+    resize: none;
+}
+.form__width{
+    background-color: white;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    width: 900px;
+}
+/* -------------------------pied de la page-------------------------------- */
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer__pied{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+hr {
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+.facebook {
+    text-decoration: none;
+    color: black;
+}
+.twitter {
+    text-decoration: none;
+    color: black;
+}
+.instagram {
+    text-decoration: none;
+    color: black;
+}
+.linkedin {
+    text-decoration: none;
+    color: black;
+}
+.bcl {
+    font-size: 12px;
+    padding: 0px 0.5em;
+}
+.tel {
+    text-decoration: none;
+    color: black;
+}
+.email {
+    text-decoration: none;
+    color: black;
+}
+/* --------------------------responsive------------------------------ */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+     .header__name {
+        margin-right: 80px;
+        margin-left: 110px;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+     .header__menu {
+        margin-right: 100px;
+        margin-left: 70px;
+     }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__moncontacts {
+        text-align: center;
+    }
+    .forms__mobile {
+        display: flex;
+    }
+    .forms {
+        display: none;
+    }
+    .form__widthinput{
+        width: 365px;  
+        height: 25px;
+    }
+    .form__widthmsgmob {
+        width: 365px; 
+        height: 117px;
+        resize: none;
+    }    
+    .submit--style {
+        display: flex;
+        margin-left: -250px;
+        margin-top: 350px;
+    }
+    
+}
+    @media screen and (max-width: 850px) {
+        .header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: row;
+        }
+        .header__name {
+            margin-left: 0%;
+            font-size: 2rem;
+        }
+        .header__menu{
+            font-size: 1.5rem;
+            margin-right: 2%;
+        }
+        .footer {
+            top: 80%
+        }
+        .forms__mobile {
+            display: none;
+        }
+        .forms {
+            display: flex;
+        }
+        .forms {
+            display: flex;
+            margin-top: 0px;
+            margin-right: 0px;
+            padding: 0%;
+            width: 100%;
+            gap: 1px;
+            font-size: 1.5rem;
+        }
+        .contact__moncontacts {
+            text-align: left;
+            font-size: 1.5rem;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            width: 100%;
+        }
+        .form__camp, .form__camp1 {
+            width: 50%;
+        }
+        .form__widthmsg {
+            width: 360px; 
+            height: 117px;
+        } 
+            
+    }
+
+
+@media screen and (min-width: 1025px) {
+.forms__mobile {
+    display: none;
+}
+.forms {
+    display: flex;
+}
+}
+@media screen and (max-width: 450px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+     }
+     .header__name {
+        font-size: 1.6rem;
+        margin-right: 30%;
+        margin-left: 40%;
+        display: contents;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+     .header__menu {
+        font-size: 1rem;
+        margin-right: 100px;
+        margin-left: 70px;
+     }
+    .contact__moncontacts{
+        display: block;
+        text-align: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contact__mescontacts {
+        text-align: center;
+    }
+    .forms__mobile {
+        display: flex;
+    }
+    .forms {
+        display: none;
+    }
+    .form__widthinput{
+        width: 340px;  
+        height: 25px;
+    }
+    .form__widthmsgmob {
+        width: 340px; 
+        height: 117px;
+        resize: none;
+    }    
+    .submit--style {
+        display: flex;
+        margin-top: 350px;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__pied{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        max-width: 900px;
+        margin: auto;
+    }
+    hr {
+        margin-top: 100px;
+        border-bottom: 1px solid black;
+        width: 85%;
+    }
+    .facebook {
+        text-decoration: none;
+        color: black;
+    }
+    .twitter {
+        text-decoration: none;
+        color: black;
+    }
+    .instagram {
+        text-decoration: none;
+        color: black;
+    }
+    .linkedin {
+        text-decoration: none;
+        color: black;
+    }
+    .bcl {
+        font-size: 12px;
+        padding: 0px 0.5em;
+    }
+    .tel {
+        text-decoration: none;
+        color: black;
+    }
+    .email {
+        text-decoration: none;
+        color: black;
+    }
+        
+
+}

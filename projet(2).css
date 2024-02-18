@@ -1,0 +1,197 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*---------------------l'en-tête------------------------*/
+
+.header {
+    position: fixed;
+    top: 5%;
+    left: 6%;
+    width: 90%;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+}
+.name {
+    text-decoration: none;
+    color: black;
+}
+.header__bouton {
+    display: inline-block;
+    margin: 0 2%;
+    background-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px 0.5em;
+    margin-bottom: 3px;
+    color: black;
+    list-style-type: none;
+    display: flex;
+}
+.menu--bordure{
+    border-right: 1px solid black;
+}
+
+/*------------------------------le corps-----------------*/
+
+.principale{
+    margin-top: 10%;
+    margin-left: 10%;
+    color: black;
+}
+.bloc{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bloc__image{
+
+    object-fit: cover;
+    object-position: bottom right;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    clear: left;
+
+}
+.bloc__texte{
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-left: 3%;
+}
+.modification--texte{
+    display: flex;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 100%;
+}    
+.modification--titre{
+    display: flex;
+    text-align: justify;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.footer {
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    max-width: 92%;
+}
+hr {
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+    width: 85%;
+}
+.trait--page{
+    text-decoration: none;
+    color: black;
+}
+
+.bcl {
+    font-size: 12px;
+    padding: 0px 0.5em;
+}
+
+
+/*------------------------responsive-------------------------*/
+
+@media screen and (max-width:850px){
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: transparent;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+        text-align: center;
+    }
+    .name {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 95%;
+        text-decoration: none;
+    }
+    .header__bouton {
+        display: flex;
+        text-align: center;
+        background-color: transparent;
+        text-decoration: none;
+        margin: 0% 22%;
+        width: 90%;
+        padding-right: 100%;
+    }
+    .principale{
+        display: block;
+        text-align: center;
+        margin-top: 30%;
+        margin-right: 20%;
+    }
+    .bloc{
+        max-width: 90%;
+        margin: auto;
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .image--dimension{
+        width: 350px;
+        height: 200px;
+        border: 5px solid gray;
+    } 
+    .bloc__image{
+        object-fit: cover;
+        text-align: center;
+        display: block;
+    }
+    .bloc__texte{
+        width: 50%;
+        margin-left: 0%;
+        display: inline;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .modification--texte{
+        display: flex;
+        text-align: justify;
+        margin-top: 200%;
+        width: 200%;
+        margin-left: 18px;
+        margin-top: 10%;
+    }    
+    .modification--titre{
+        display: flex;
+        text-align: justify;
+        width: 100%;
+        top: 50%;
+        margin-left: 10%;
+    }
+    
+    .bloc{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+    .footer {
+        display: block;
+        justify-content: space-around;
+        text-align: center;
+    }
+}

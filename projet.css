@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 900%;
+}
+/*--------------------l'en-tête--------------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.identification {
+    display: flex;
+}
+.name {
+    text-decoration: none;
+    color: black;
+}
+.btn10 {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px 0.5em;
+    margin-bottom: 6px;
+    color: black;
+}
+.btn20 {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding:0px 0.5em;
+    margin-bottom: 6px;
+    color: black;
+}
+.btn30 {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px 0.5em;
+    margin-bottom: 6px;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+.btn10, .btn20, .btn30 {
+    display: inline-block;
+    margin: 0 2%;
+}
+.btn10, .btn20 {
+    border-right: 1px solid black;
+}
+.name {
+    margin-right: 500px;
+    margin-left: 30px;
+}
+.btn10, .btn20, .btn30 {
+    display: inline-block;
+    margin: 0 2%;
+}
+.btn10, .btn20 {
+    border-right: 1px solid black;
+}
+.name {
+    margin-right: 500px;
+    margin-left: 30px;
+}
+.identification {
+    display: flex;
+}
